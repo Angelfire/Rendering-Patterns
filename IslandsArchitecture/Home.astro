@@ -1,0 +1,32 @@
+---
+// Component Imports
+import { SocialButtons } from './SocialButtons.js';
+---
+
+<html lang="en">
+ <head>
+   <link rel="stylesheet" href="./blog.css" />
+ </head>
+
+ <body>
+   <div class="layout">
+     <article class="content">
+       <section class="intro">
+         <h1 class="title">Post title (static)</h1>
+         <br/>
+         <p>Post sub-title (static)</p>
+       </section>
+       <section class="intro">
+           <p>This is the  post content with images that is rendered by the server.</p>
+           <Image src="https://source.unsplash.com/user/c_v_r/200x200" />
+           <p>The next section contains the interactive social buttons component which includes its script.</p>
+       </section>
+       <section class="social">
+          <div>
+            <SocialButtons client:visible></SocialButtons>
+          </div>
+       </section>
+     </article>
+   </div>
+ </body>
+</html>
